@@ -20,7 +20,7 @@ class SummarizeViewModel(
     fun summarize(inputText: String) {
         _uiState.value = SummarizeUiState.Loading
 
-        val prompt = "What is the meaning of this english word in romanji: $inputText"
+        val prompt = "translate this english word or sentence in japanese romaji as well as in japanese hiragana : $inputText"
 
         viewModelScope.launch {
             try {
