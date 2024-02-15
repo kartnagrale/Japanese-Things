@@ -20,7 +20,7 @@ class SummarizeViewModel(
     fun summarize(inputText: String) {
         _uiState.value = SummarizeUiState.Loading
 
-        val prompt = "Summarize the following text for me: $inputText"
+        val prompt = "What is the meaning of this english word in romanji: $inputText"
 
         viewModelScope.launch {
             try {
